@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nosotros - STRKE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/css/estilos.css}">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <div th:replace="fragments/header :: header"></div>
+
+  <div class="page-header text-center">
+    <span class="page-header-tag">Quiénes somos</span>
+    <h1 class="page-header-titulo">SOBRE <span>STRKE</span></h1>
+  </div>
+
+  <main class="container py-5 flex-grow-1">
+
+    <!-- Historia -->
+    <section class="mb-5">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6">
+          <img src="https://picsum.photos/600/420?random=70" alt="STRKE historia" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#671988;display:block;margin-bottom:12px;">Nuestra historia</span>
+          <h2 class="sec-titulo mb-3">NACIMOS EN <span>LIMA</span></h2>
+          <p style="font-size:15px;color:#666;line-height:1.8;">
+            STRKE nació en Lima con una sola misión: crear zapatillas de alto rendimiento que reflejen
+            el espíritu de quienes nunca se detienen. Cada par está diseñado con precisión, materiales
+            de calidad y la pasión de un equipo que vive el deporte.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="bg-gris rounded-3 py-5 px-4 mb-5">
+      <div class="row g-3 text-center">
+        <div class="col-md-3 col-6">
+          <div class="stat-box"><div class="stat-num">4+</div><div class="stat-lbl">Años de experiencia</div></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-box"><div class="stat-num">3K+</div><div class="stat-lbl">Pares vendidos</div></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-box"><div class="stat-num">39</div><div class="stat-lbl">Modelos activos</div></div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="stat-box"><div class="stat-num">4.9</div><div class="stat-lbl">Puntuación clientes</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Misión / Visión -->
+    <section class="mb-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4" style="border-left:3px solid #8808af !important;">
+            <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#671988;display:block;margin-bottom:10px;">Misión</span>
+            <h4 class="sec-titulo mb-3" style="font-size:30px;">NUESTRA <span>MISIÓN</span></h4>
+            <p style="font-size:14px;color:#666;line-height:1.8;">Crear zapatillas que combinen rendimiento, diseño y durabilidad para que cada persona pueda moverse con confianza y estilo propio.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4" style="border-left:3px solid #111 !important;">
+            <span style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#999;display:block;margin-bottom:10px;">Visión</span>
+            <h4 class="sec-titulo mb-3" style="font-size:30px;">NUESTRA <span>VISIÓN</span></h4>
+            <p style="font-size:14px;color:#666;line-height:1.8;">Ser la marca peruana de zapatillas más reconocida de Latinoamérica, referente de innovación, calidad y responsabilidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipo -->
+    <section>
+      <div class="text-center mb-5">
+        <h2 class="sec-titulo">EL <span>EQUIPO</span></h2>
+        <div class="linea"></div>
+      </div>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <img src="https://cdn.pixabay.com/photo/2016/11/29/03/54/adult-1868750_1280.jpg" class="rounded-circle mb-3" width="130" height="130" style="object-fit:cover;border:3px solid #ebebeb;" alt="CEO">
+          <h5 style="font-weight:600;">Francisco López</h5>
+          <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;">CEO & Fundador</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://cdn.pixabay.com/photo/2016/03/26/22/13/woman-1284411_1280.jpg" class="rounded-circle mb-3" width="130" height="130" style="object-fit:cover;border:3px solid #ebebeb;" alt="Diseño">
+          <h5 style="font-weight:600;">Sofía Ramos</h5>
+          <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;">Directora de Diseño</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://cdn.pixabay.com/photo/2017/06/29/20/22/man-2459725_1280.jpg" class="rounded-circle mb-3" width="130" height="130" style="object-fit:cover;border:3px solid #ebebeb;" alt="Marketing">
+          <h5 style="font-weight:600;">Juan Pérez</h5>
+          <p style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#999;">Marketing & Growth</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div th:replace="fragments/footer :: footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
