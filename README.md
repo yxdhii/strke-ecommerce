@@ -1,0 +1,1 @@
+# 👟 STRKE E-commerce — Prototipo Visual
