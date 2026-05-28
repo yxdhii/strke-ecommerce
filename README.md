@@ -87,4 +87,4 @@ cd strke-ecommerce
 
 ## 👩‍💻 Autora
 
-**Yadhira Saavedra**
+**Yadhira Saavedra** | **Htr Franco** 😒
